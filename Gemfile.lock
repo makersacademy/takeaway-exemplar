@@ -3,6 +3,7 @@ GEM
   specs:
     builder (3.2.2)
     diff-lcs (1.2.5)
+    dotenv (2.0.2)
     jwt (1.5.2)
     multi_json (1.11.2)
     rspec (3.3.0)
@@ -27,5 +28,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   rspec
   twilio-ruby

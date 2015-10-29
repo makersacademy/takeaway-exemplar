@@ -1,5 +1,5 @@
-require "order"
-require "sms"
+require "./lib/order"
+require "./lib/sms"
 
 class Takeaway
   def initialize(menu:, config:, order: nil, sms: nil)
