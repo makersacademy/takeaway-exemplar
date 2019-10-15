@@ -8,7 +8,8 @@ class Order
   end
 
   def add(dish, quantity)
-    fail NoItemError, "#{dish.capitalize} is not on the menu!" unless menu.has_dish?(dish)
+    fail NoItemError, "#{dish.capitalize} is not on the menu!" unless menu.dish?(dish)
+
     dishes[dish] = quantity
   end
 

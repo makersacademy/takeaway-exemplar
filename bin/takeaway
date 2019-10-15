@@ -19,6 +19,7 @@ loop do
   print "What do you want? "
   dish = gets.strip
   break if dish == "done"
+
   print "How many? "
   quantity = gets.to_i
   dishes[dish] = quantity

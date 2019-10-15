@@ -8,7 +8,7 @@ describe Takeaway do
   let(:sms) { instance_double("SMS", deliver: nil) }
   let(:printed_menu) { "Chicken: £3.50" }
 
-  let(:dishes) { {chicken: 2, fish: 1} }
+  let(:dishes) { { chicken: 2, fish: 1 } }
 
   before do
     allow(order).to receive(:add)
