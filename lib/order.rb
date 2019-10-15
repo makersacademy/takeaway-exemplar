@@ -1,7 +1,4 @@
 class Order
-
-  attr_reader :dishes
-
   def initialize(menu)
     @dishes = {}
     @menu = menu
@@ -18,7 +15,7 @@ class Order
 
   private
 
-  attr_reader :menu
+  attr_reader :dishes, :menu
 
   def item_totals
     dishes.map do |dish, quantity|
