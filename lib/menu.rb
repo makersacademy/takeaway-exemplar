@@ -1,6 +1,4 @@
 class Menu
-  attr_reader :dishes
-
   def initialize(dishes)
     @dishes = dishes
   end
@@ -18,4 +16,8 @@ class Menu
   def price(dish)
     dishes[dish]
   end
+
+  private
+
+  attr_reader :dishes
 end
