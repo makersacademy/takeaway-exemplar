@@ -1,4 +1,5 @@
 require "sms"
+require "time"
 
 describe SMS do
   subject(:sms) { described_class.new(config, client: client) }
